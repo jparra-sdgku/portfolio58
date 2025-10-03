@@ -1,0 +1,14 @@
+# Archivos de entorno y secretos
+# ¡Esta es la línea más importante para tu seguridad!
+.env
+
+# Base de datos local
+db.sqlite3
+
+# Archivos de Python generados
+__pycache__/
+*.pyc
+
+# Carpetas de entornos virtuales
+venv/
+env/
