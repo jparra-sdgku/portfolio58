@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+
+{% block title %} About me {% endblock title %}
+
+{% load static %}
+
+{% block content %}
+<section id="about" class="about-section center">
+
+    <div class="about-image-container center">
+        <img src="{% static 'img/avatar-img.jpg'%}" alt="my picture">
+        <a href="{% static 'assets/resume.pdf' %}" target="_blank">
+            <button>Get the Full resume</button>
+        </a>
+    </div>
+
+    <div class="about-description-container center-column">
+
+        <div class="center-column">
+            <h1>My rol as dev</h1>
+            <h2>My name here</h2>
+        </div>
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur. Diam porttitor nisl lacinia id viverra dignissim
+            eu iaculis. In sit pharetra rutrum lacus vehicula nunc sit varius. Odio ultricies faucibus aliquam dis.
+            Dictumst adipiscing tincidunt nunc rhoncus. Quisque neque sapien feugiat id dapibus ut risus. Elit et
+            amet adipiscing diam quis quam et. Rhoncus sed urna dignissim ac porttitor eu arcu ut. Adipiscing turpis
+            risus nascetur felis in morbi sollicitudin id egestas. Adipiscing amet est tristique volutpat in.
+            Gravida purus aliquet tincidunt nibh ultrices faucibus. Eleifend amet id cursus phasellus. Non vulputate
+            condimentum adipiscing tempor justo metus turpis diam risus. Pellentesque in interdum ullamcorper amet
+            scelerisque velit. Sem nec duis in amet. <br><br>
+            Integer nisl cursus turpis tempus eget tincidunt fringilla cras. Bibendum cursus cursus enim elit at
+            risus in etiam. Vitae a condimentum et sed integer neque quam et arcu. Ac at tellus metus elementum
+            lectus. In magna eget tincidunt adipiscing scelerisque proin blandit. Scelerisque velit vestibulum
+            tincidunt pharetra nisi volutpat facilisis orci ornare.
+        </p>
+
+    </div>
+</section>
+
+ <section class="skills-section center-column">
+
+        <h2>Skills</h2>
+
+        <div class="skills-list center">
+            <label class="text-label">Skill</label>
+            <label class="text-label">Skill</label>
+            <label class="text-label">Skill</label>
+            <label class="text-label">Skill</label>
+            <label class="text-label">Skill</label>
+            <label class="text-label">Skill</label>
+            <label class="text-label">Skill</label>
+            <label class="text-label">Skill</label>
+            <label class="text-label">Skill</label>
+            <label class="text-label">Skill</label>
+        </div>
+    </section>
+
+   
+{% endblock content %}
+
