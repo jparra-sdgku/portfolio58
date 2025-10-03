@@ -1,15 +1,23 @@
 from django.shortcuts import render
+
 from .forms import ContactForm
 from django.core.mail import send_mail
+from projects.models import Skill
+
+
 
 
 # Create your views here.
 def about_me_view(request):
-    return render(request, 'portfolio/about_me.html')
+    skills_list = Skill.objects.all()
+    context= {"skills":skills_list}
+    return render(request, 'portfolio/about_me.html',context)
 
 
 def experience_view(request):
-    return render(request, 'portfolio/experience.html')
+    skills_list = Skill.objects.all()
+    context= {"skills":skills_list}
+    return render(request, 'portfolio/experience.html',context)
 
 def contact_view(request):
     if request.method == 'POST': #means the form is not empty

@@ -1,13 +1,12 @@
 header {
-    background: linear-gradient(135deg, var(--surface-color), var(--primary-color));
+    background-color: var(--surface-color);
     height: 60px;
-    position: sticky;
+    position:sticky;
     top: 0px;
-    box-shadow: var(--shadow-light);
-    backdrop-filter: blur(10px);
-    z-index: 1000;
 }
 
+
+/*Right Side*/
 nav {
     height: 100%;
     width: 80%;
@@ -18,52 +17,24 @@ nav {
 }
 
 .nav-link a {
-    color: white;
+    color:white;
     font-size: 1rem;
     text-transform: uppercase;
     margin: 2%;
     padding: 1% 2%;
-    border-radius: 20px;
-    transition: var(--transition);
-    position: relative;
-    overflow: hidden;
-}
-
-.nav-link a::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    width: 0;
-    height: 2px;
-    background: white;
-    transition: var(--transition);
-    transform: translateX(-50%);
 }
 
 .nav-link a:hover {
-    background: rgba(255, 255, 255, 0.1);
-    transform: translateY(-2px);
+    border-bottom: solid 2px white;
 }
 
-.nav-link a:hover::before {
-    width: 80%;
-}
-
-/* Hamburger mejorado */
+/*Hamburger button*/
 .nav-btn span {
     display: block;
     width: 30px;
     height: 3px;
     background-color: white;
     margin: 6px auto;
-    border-radius: 2px;
-    transition: var(--transition);
-}
-
-.nav-btn:hover span {
-    background-color: #f0f0f0;
-    transform: scaleX(1.1);
 }
 
 #nav-check, .nav-btn {

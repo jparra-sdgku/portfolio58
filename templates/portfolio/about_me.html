@@ -39,24 +39,16 @@
     </div>
 </section>
 
- <section class="skills-section center-column">
+<section class="skills-section center-column">
 
-        <h2>Skills</h2>
+    <h2>Skills</h2>
 
-        <div class="skills-list center">
-            <label class="text-label">Skill</label>
-            <label class="text-label">Skill</label>
-            <label class="text-label">Skill</label>
-            <label class="text-label">Skill</label>
-            <label class="text-label">Skill</label>
-            <label class="text-label">Skill</label>
-            <label class="text-label">Skill</label>
-            <label class="text-label">Skill</label>
-            <label class="text-label">Skill</label>
-            <label class="text-label">Skill</label>
-        </div>
-    </section>
+    <div class="skills-container center">
+        {% for skill in skills.all%}
+        <label class="text-label">{{skill.name}}</label>
+        {% endfor %}
+    </div>
+</section>
 
-   
+
 {% endblock content %}
-

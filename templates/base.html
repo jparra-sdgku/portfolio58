@@ -14,7 +14,7 @@
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800&family=Lobster&display=swap"
         rel="stylesheet">
     <!-- <link rel="stylesheet" href="{% static 'css/base.css' %}"> -->
-     <link rel="stylesheet" href="{% static 'css/base_alternativo.css' %}">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
     <link rel="stylesheet" href="{% static 'css/header.css' %}">
     <link rel="stylesheet" href="{% static 'css/section.css' %}">
     <link rel="stylesheet" href="{% static 'css/footer.css' %}">
@@ -36,30 +36,35 @@
                 <a href="{% url 'about_me' %}">About me</a>
                 <a href="{% url 'projects' %}">Projects</a>
                 <a href="{% url 'experience' %}">Experience</a>
-                <a href="#contact">Contact</a>
+                <a href="{% url 'contact' %}">Contact</a>
             </div>
 
         </nav>
 
     </header>
+    
 
-    {% block content %}
-    {% endblock content %}
+        <main>
 
-    <footer>
-        <a href="#">
-            <h2>my name</h2>
-        </a>
+            {% block content %}
 
-        <nav class="nav-footer center">
-            <a href="{% url 'about_me' %}">About me</a>
-            <a href="{% url 'projects' %}">Projects</a>
-            <a href="{% url 'experience' %}">Experience</a>
-            <a href="#contact">Contact</a>
-        </nav>
+            {% endblock content %}
 
-    </footer>
+        </main>
+        <footer>
+            <a href="#">
+                <h2>my name</h2>
+            </a>
 
+            <nav class="nav-footer center">
+                <a href="{% url 'about_me' %}">About me</a>
+                <a href="{% url 'projects' %}">Projects</a>
+                <a href="{% url 'experience' %}">Experience</a>
+                <a href="{% url 'contact' %}">Contact</a>
+            </nav>
+
+        </footer>
+   
 </body>
 
 </html>

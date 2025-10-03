@@ -1,23 +1,30 @@
 {% extends 'base.html' %}
 
-{% block title %} Contact {% endblock title %}
+
+{% block title %} Contact {% endblock title%}
 
 {% load static %}
 
 {% block content %}
 
-<section class="contact-fom">
-    <h1>Contact Me</h1>
-    <form id="'contactform" method="POST">
+
+<section class="contact-form">
+    <h1>Contact me</h1>
+    <form id  ="contactform"  method="POST">
         {% csrf_token %}
-        {{ form.name }}
-        {{ form.email }}
-        {{ form.message }}
+        {{form.name}}
+        {{form.email}}
+        {{form.message}}
+
         <div class="form-buttons">
             <button type="submit">Send</button>
+            <button type="reset">Reset</button>
         </div>
+
+
+
     </form>
+
 </section>
 
-
-{% endblock content %}
+{% endblock content%}
